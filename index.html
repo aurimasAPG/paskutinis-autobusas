@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>25 tuščios vietos — Peace Music Freedom 2026</title>
+<meta name="description" content="43 vaikai iš Charkivo muzikos licėjaus. Programa paruošta, trūksta tik autobuso. Vieta autobuse — 900 €.">
+<meta property="og:title" content="25 tuščios vietos">
+<meta property="og:description" content="Kiekviena tuščia vieta — vaikas, kuris lieka Charkive. Peace Music Freedom 2026.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/vaikai.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#16325C; --navy-deep:#0D1D38; --navy-mid:#1E4074;
+  --gold:#C8992E; --gold-soft:#E3BC66;
+  --cream:#F2EDE2; --paper:#FBF9F4;
+  --ink:#141821; --ink-soft:#5C6272; --line:#D8D0BF;
+  --max:1060px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;
+  font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:700;line-height:1.14;letter-spacing:-.01em}
+a{color:var(--navy)}
+.eyebrow{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:var(--ink-soft)}
+.gold-rule{width:56px;height:3px;background:var(--gold);margin:14px 0 20px}
+section{padding:64px 0}
+@media(max-width:640px){section{padding:46px 0}}
+
+/* buttons */
+.btn{display:inline-block;padding:14px 28px;font-weight:600;font-size:14.5px;text-decoration:none;
+  border-radius:3px;cursor:pointer;border:1.5px solid var(--gold);font-family:'Inter',sans-serif;
+  transition:background .18s,transform .12s}
+.btn.primary{background:var(--gold);color:var(--navy-deep)}
+.btn.primary:hover{background:var(--gold-soft);transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--gold)}
+.btn.ghost:hover{background:rgba(200,153,46,.14)}
+.btn.dark{background:var(--navy);color:#fff;border-color:var(--navy)}
+.btn.dark:hover{background:var(--navy-mid)}
+.btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.cta{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+
+/* org bar */
+.orgbar{background:var(--navy-deep);color:#A9BBD6;text-align:center;padding:12px 22px;
+  font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+
+/* 1 — hero */
+.hero{background:var(--navy);color:#fff;padding:62px 0 66px}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:34px}}
+.hero .eyebrow{color:var(--gold)}
+.bignum{font-family:'Source Serif 4',serif;font-weight:700;
+  font-size:clamp(94px,15vw,176px);line-height:.85;letter-spacing:-.045em}
+.bignum-label{font-size:clamp(14px,2.5vw,21px);letter-spacing:.24em;text-transform:uppercase;
+  color:var(--gold);font-weight:600;margin-top:10px}
+.hero h1{font-size:clamp(22px,3.5vw,33px);font-weight:400;font-style:italic;margin:26px 0 0;max-width:600px}
+.hero .lede{color:#C3D0E4;max-width:540px;font-size:15.5px}
+figure{margin:0}
+.hero-photo img{width:100%;height:auto;display:block;border-radius:4px;box-shadow:0 26px 62px rgba(0,0,0,.45)}
+.hero-photo figcaption{margin-top:11px;font-size:12px;color:#8FA3C2;font-style:italic}
+
+/* 2 — urgency */
+.urgency{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:20px 24px;text-align:center;font-size:15px;color:var(--ink-soft)}
+.urgency b{color:var(--ink)}
+
+/* 3 — esmė */
+.two{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:start}
+@media(max-width:860px){.two{grid-template-columns:1fr;gap:30px}}
+.two h2{font-size:clamp(27px,4.2vw,38px)}
+.two p{font-size:16.5px}
+.two p+p{margin-top:14px}
+.side-photo img{width:100%;height:auto;display:block;border-radius:4px}
+.side-photo figcaption{margin-top:9px;font-size:12.5px;color:var(--ink-soft);font-style:italic}
+.factline{display:flex;gap:30px;flex-wrap:wrap;margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}
+.factline div{min-width:78px}
+.factline .n{font-family:'Source Serif 4',serif;font-size:30px;font-weight:700;color:var(--navy);line-height:1}
+.factline .l{font-size:12.5px;color:var(--ink-soft);margin-top:4px}
+
+/* 4 — autobusas */
+#autobusas{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sec-head{text-align:center;margin-bottom:36px}
+.sec-head h2{font-size:clamp(27px,4.2vw,38px);margin-top:7px}
+.sec-head .gold-rule{margin:14px auto 0}
+.sec-head p{color:var(--ink-soft);max-width:560px;margin:14px auto 0;font-size:15px}
+
+.bus-layout{display:grid;grid-template-columns:360px 1fr;gap:52px;align-items:start}
+@media(max-width:860px){.bus-layout{grid-template-columns:1fr;gap:34px}}
+
+.progress-line{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;
+  font-size:13.5px;color:var(--ink-soft);margin-bottom:8px}
+.progress-line .big{font-family:'Source Serif 4',serif;font-size:27px;color:var(--navy);font-weight:700}
+.progress-bar{height:7px;background:var(--cream);border:1px solid var(--line);border-radius:4px;
+  overflow:hidden;margin-bottom:26px}
+.progress-bar i{display:block;height:100%;background:var(--navy);transition:width .5s}
+
+.bus{border:2px solid var(--navy);border-radius:32px 32px 14px 14px;
+  padding:44px 16px 18px;position:relative;background:var(--paper)}
+.bus::before{content:"VAIRUOTOJAS";position:absolute;top:16px;left:50%;transform:translateX(-50%);
+  font-size:8.5px;letter-spacing:.2em;color:var(--ink-soft);font-weight:600}
+.bus-rows{display:flex;flex-direction:column;gap:6px}
+.bus-row{display:grid;grid-template-columns:1fr 1fr 24px 1fr 1fr;gap:6px}
+.bus-row.last{grid-template-columns:1fr 24px 1fr 1fr}
+.seat{aspect-ratio:1/.72;border:1.5px solid var(--line);border-radius:6px 6px 3px 3px;background:#fff;
+  position:relative;display:flex;align-items:center;justify-content:center;
+  font-size:10.5px;font-weight:600;color:var(--ink-soft)}
+.seat.taken{background:var(--navy);border-color:var(--navy);cursor:help}
+.seat.taken::after{content:"♪";font-size:14px;color:var(--gold-soft);position:absolute}
+.seat.taken span{display:none}
+.legend{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;font-size:12px;
+  color:var(--ink-soft);margin-top:20px}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;
+  vertical-align:-1px;border:1px solid var(--line)}
+.legend .t i{background:var(--navy);border-color:var(--navy)}
+.legend .e i{background:#fff}
+
+/* price cards */
+.price{border-top:2px solid var(--navy);padding:20px 0 18px;border-bottom:1px solid var(--line)}
+.price:last-of-type{border-bottom:2px solid var(--navy)}
+.price .top{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.price h3{font-size:21px;white-space:nowrap}
+.price .dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-5px);min-width:20px}
+.price .amt{font-family:'Source Serif 4',serif;font-size:23px;font-weight:700;color:var(--gold);white-space:nowrap}
+.price .desc{font-size:14px;color:var(--ink-soft);margin-top:6px}
+.price .desc b{color:var(--ink);font-weight:600}
+.tag{display:inline-block;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+  background:var(--navy);color:#fff;padding:3px 8px;border-radius:3px;vertical-align:2px}
+.tag.gold{background:var(--gold);color:var(--navy-deep)}
+
+.days-strip{margin-top:24px}
+.days-strip .cap{font-size:12.5px;color:var(--ink-soft);margin-bottom:9px}
+.days{display:grid;grid-template-columns:repeat(15,1fr);gap:4px}
+@media(max-width:600px){.days{grid-template-columns:repeat(8,1fr)}}
+.day{aspect-ratio:1/1.15;border:1px solid var(--line);border-radius:3px;background:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:10.5px;font-weight:600;
+  color:var(--ink-soft);transition:border-color .15s}
+.day.taken{background:var(--navy);border-color:var(--navy);color:var(--gold-soft)}
+
+/* 5 — rėmėjai */
+.dark{background:var(--navy);color:#fff}
+.dark h2,.dark h3{color:#fff}
+.dark .eyebrow{color:var(--gold)}
+.dark .sec-head p{color:#C3D0E4}
+.sup-group{margin-bottom:30px}
+.sup-group:last-child{margin-bottom:0}
+.sup-head{display:flex;align-items:baseline;gap:13px;margin-bottom:14px}
+.sup-head h3{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+  font-weight:700;color:var(--gold);white-space:nowrap}
+.sup-head .amt{font-size:12px;color:#8FA3C2;white-space:nowrap}
+.sup-head .bar{flex:1;height:1px;background:rgba(255,255,255,.18);min-width:12px}
+.sup-grid{display:flex;flex-wrap:wrap;gap:12px}
+.sup{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:5px;
+  display:flex;align-items:center;justify-content:center;text-align:center;padding:16px 22px;
+  font-weight:600;color:#fff;line-height:1.35}
+.sup img{max-height:42px;max-width:150px;display:block}
+.sup.lg{min-width:min(100%,290px);min-height:88px;font-size:17px;font-family:'Source Serif 4',serif;
+  font-weight:700;border:1.5px solid var(--gold);background:rgba(200,153,46,.1)}
+.sup.md{min-width:min(100%,190px);min-height:70px;font-size:14.5px;flex:1 1 190px;max-width:300px}
+.sup small{display:block;font-weight:400;font-size:11.5px;color:#A9BBD6;margin-top:5px;font-family:'Inter',sans-serif}
+.sup-empty{font-size:14px;color:#8FA3C2;font-style:italic}
+.gap-line{margin-top:34px;padding-top:22px;border-top:1px solid rgba(255,255,255,.18);
+  font-size:15.5px;color:#C3D0E4}
+.gap-line b{color:var(--gold-soft)}
+
+/* 6 — komanda */
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+@media(max-width:820px){.team{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.team{grid-template-columns:1fr}}
+.person{border-top:2px solid var(--gold);padding-top:16px}
+.person .ph,.person .mono{width:66px;height:66px;border-radius:50%;margin-bottom:11px;display:block}
+.person .ph{object-fit:cover;background:var(--cream)}
+.person .mono{background:var(--cream);border:1px solid var(--line);display:flex;align-items:center;
+  justify-content:center;font-family:'Source Serif 4',serif;font-size:20px;font-weight:700;color:var(--navy)}
+.person h3{font-size:18px}
+.person .role{font-size:13px;color:var(--ink-soft);margin-top:4px}
+
+/* 7 — rekvizitai */
+.card-back{display:grid;grid-template-columns:1.15fr 1fr;gap:44px;align-items:start}
+@media(max-width:820px){.card-back{grid-template-columns:1fr;gap:30px}}
+.req{background:#fff;border:1px solid var(--line);border-radius:5px;padding:24px 26px;
+  font-size:14px;line-height:1.95}
+.req b{font-weight:600}
+.todo{color:#A8442E;font-weight:600}
+.faq details{border-bottom:1px solid var(--line);padding:14px 0}
+.faq details:first-of-type{border-top:1px solid var(--line)}
+.faq summary{cursor:pointer;font-family:'Source Serif 4',serif;font-size:17px;font-weight:600;
+  list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--gold);font-size:21px;font-weight:400;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin-top:10px;font-size:14px;color:var(--ink-soft)}
+
+/* 8 — band + footer */
+.band{position:relative;display:flex;align-items:center;background:var(--navy-deep) center/cover no-repeat;
+  padding:76px 24px;text-align:center;min-height:380px}
+.band::before{content:"";position:absolute;inset:0;background:rgba(13,29,56,.78)}
+.band .inner{position:relative;max-width:720px;margin:0 auto}
+.band .big{font-family:'Source Serif 4',serif;font-size:clamp(25px,4.2vw,40px);font-weight:700;
+  color:#fff;line-height:1.2}
+.band .sub{color:#C3D0E4;margin-top:16px;font-size:15.5px}
+.band .cta{justify-content:center}
+footer{background:var(--navy-deep);color:#8FA3C2;padding:40px 24px 48px;text-align:center;font-size:13px}
+footer a{color:var(--gold-soft)}
+
+.tip{position:fixed;z-index:50;pointer-events:none;background:var(--navy-deep);color:#fff;
+  font-size:12.5px;padding:8px 12px;border-radius:4px;max-width:250px;opacity:0;transition:opacity .12s}
+.tip.show{opacity:1}
+</style>
+</head>
+<body>
+
+<div class="orgbar">Vilniaus International Rotary klubas &nbsp;·&nbsp; Rotary Club Kharkiv-City &nbsp;·&nbsp; Rotary apygarda 1462</div>
+
+<!-- 1 — HERO -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Peace · Music · Freedom 2026</p>
+      <div class="bignum" id="heroNum">25</div>
+      <div class="bignum-label">tuščios vietos autobuse</div>
+      <h1>Kiekviena tuščia vieta — vaikas, kuris lieka Charkive.</h1>
+      <div class="gold-rule"></div>
+      <p class="lede">43 Charkivo valstybinio muzikos licėjaus vaikai. Rugpjūčio 31 – rugsėjo 14 d. Lietuvoje: repeticijos Dauguose, koncertai Vilniuje, Kaune ir Dauguose.</p>
+      <div class="cta">
+        <a class="btn primary" href="#autobusas">Kaip užpildomas autobusas</a>
+        <a class="btn ghost" href="#rekvizitai">Rekvizitai ir sutartis</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/vaikai.jpg" alt="Charkivo valstybinio muzikos licėjaus vaikai groja smuikais">
+      <figcaption>Charkivo licėjaus jaunieji muzikantai · 2025</figcaption>
+    </figure>
+  </div>
+</header>
+
+<!-- 2 — SKUBA -->
+<div class="urgency">
+  Programa paruošta: mokytojai, natos, salės, nakvynė Daugų technologijų ir verslo mokykloje.
+  Trūksta tik autobuso. <b>Sprendimas — iki rugpjūčio 10 d.</b>
+</div>
+
+<!-- 3 — ESMĖ -->
+<section>
+  <div class="wrap two">
+    <div>
+      <p class="eyebrow">Kas tai per projektas</p>
+      <h2>Orkestras — vienintelė mokykla, kurios negalima baigti vienam.</h2>
+      <div class="gold-rule"></div>
+      <p>Charkivo valstybinis muzikos licėjus — viena iš keturių specializuotų muzikos mokyklų Ukrainoje. Nuo karo pradžios vaikai mokosi po vieną: iš namų, iš slėptuvių, iš užsienio. Jie turi natas. Turi mokytoją ekrane. <b>Ko nebeturi — vienas kito.</b></p>
+      <p>Dvi savaitės Lietuvoje yra vienintelė vieta metuose, kur jie groja kartu. Tai trečia vasara iš eilės: per dvi ankstesnes vaikai surengė 12 koncertų.</p>
+      <div class="factline">
+        <div><div class="n">43</div><div class="l">vaikai, 8–16 m.</div></div>
+        <div><div class="n">15</div><div class="l">programos dienų</div></div>
+        <div><div class="n">39 000 €</div><div class="l">visa programa</div></div>
+      </div>
+    </div>
+    <figure class="side-photo">
+      <img src="img/koncertas.jpg" alt="Baigiamasis koncertas Dauguose su Ukrainos ir Lietuvos vėliavomis">
+      <figcaption>Baigiamasis koncertas · Daugai, 2025</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 4 — AUTOBUSAS -->
+<section id="autobusas">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Gyvas autobuso salonas</p>
+      <h2>43 vietos. Kiek jau užpildyta?</h2>
+      <div class="gold-rule"></div>
+      <p>39 000 € padalinome į 43 vietas po 900 € — tiek kainuoja vieno vaiko visos penkiolika dienų. Tamsios vietos jau turi savo vardą.</p>
+    </div>
+
+    <div class="bus-layout">
+      <div>
+        <div class="progress-line">
+          <span><span class="big" id="pSeats">18</span> / 43 užpildytos</span>
+          <span id="pEur">16 550 € iš 39 000 €</span>
+        </div>
+        <div class="progress-bar"><i id="pFill" style="width:42%"></i></div>
+        <div class="bus" id="bus" aria-label="Autobuso salonas, 43 vietos"></div>
+        <div class="legend">
+          <span class="t"><i></i>užpildyta</span>
+          <span class="e"><i></i>laisva</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="price">
+          <div class="top"><h3>Mecenatas</h3><span class="dots"></span><span class="amt">nuo 5 000 €</span></div>
+          <p class="desc">Apie dvi stovyklos dienas arba penkios vietos. <b>Vieša padėka nuo scenos</b> baigiamajame koncerte, logotipas ant koncertų ekrano, 10 kvietimų, orkestro pasirodymas jūsų įmonėje ir viskas, kas žemesnėse pakopose.<br>
+          <b>Šiandien iki pilno autobuso liko <span id="mecCount">5</span> mecenatai.</b> <span class="tag gold">Mecenatas</span></p>
+        </div>
+        <div class="price">
+          <div class="top"><h3>Stovyklos diena</h3><span class="dots"></span><span class="amt">2 600 €</span></div>
+          <p class="desc"><b>Visi 43 vaikai, viena diena.</b> Tos dienos programa nešioja jūsų vardą, logotipas ant koncertų ekrano, 6 kvietimai į baigiamąjį koncertą, padėka apygardos 1462 naujienlaiškyje. Dienų yra tik 15. <span class="tag gold">Partneris</span></p>
+        </div>
+        <div class="price">
+          <div class="top"><h3>Vieta autobuse</h3><span class="dots"></span><span class="amt">900 €</span></div>
+          <p class="desc"><b>Vienas vaikas, visos 15 dienų.</b> Įvardyta vieta su jūsų vardo kortele ir jos nuotrauka, vardas ar logotipas šiame puslapyje, 2 kvietimai į baigiamąjį koncertą, paminėjimas Rotary kanaluose. Tokių vietų yra tik 43.<br>
+          <span class="tag">Rėmėjas — verslui</span> <span class="tag gold">Partneris — Rotary klubui</span></p>
+        </div>
+
+        <div class="days-strip">
+          <p class="cap">Arba paimkite visą dieną — 15 dienų po 2 600 €:</p>
+          <div class="days" id="days"></div>
+        </div>
+
+        <div class="cta">
+          <a class="btn dark" href="#rekvizitai">Kaip paremti</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 — KAS JAU AUTOBUSE -->
+<section class="dark" id="remejai">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Ačiū</p>
+      <h2>Kas jau autobuse</h2>
+      <div class="gold-rule"></div>
+      <p>Kiekvienas vardas čia — vieta, kuri nebėra tuščia.</p>
+    </div>
+    <div id="supWall"></div>
+    <p class="gap-line">
+      „Stiprūs kartu“ 10 000 € pervedė tiesiogiai Daugų technologijų ir verslo mokyklai, kurioje apsistos vaikai.
+      Iš viso užtikrinta 16 550 € — 18 vietų iš 43. Lieka <b>25 vietos, 22 450 €</b>.
+    </p>
+  </div>
+</section>
+
+<!-- 6 — KOMANDA -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Kas už tai atsako</p>
+      <h2>Projekto komanda</h2>
+      <div class="gold-rule"></div>
+    </div>
+    <div class="team">
+      <div class="person">
+        <img class="ph" src="img/jurgita.jpg" alt="Jurgita Turulienė">
+        <h3>Jurgita Turulienė</h3>
+        <p class="role">Rotary apygardos 1462 valdytoja 2022–2023 m. · Vilniaus Šv. Kristoforo RK, klubo prezidentė 2018–2019 m., Paul Harris Fellow</p>
+      </div>
+      <div class="person">
+        <!-- įkėlus nuotrauką: <img class="ph" src="img/tomas.jpg" alt="Tomas Marcinkus"> -->
+        <div class="mono">TM</div>
+        <h3>Tomas Marcinkus</h3>
+        <p class="role">Vilniaus International Rotary klubo prezidentas 2025–2026 m.</p>
+      </div>
+      <div class="person">
+        <!-- įkėlus nuotrauką: <img class="ph" src="img/marius.jpg" alt="Marius Plitninkas"> -->
+        <div class="mono">MP</div>
+        <h3>Marius Plitninkas</h3>
+        <p class="role">Apygardos 1462 narystės komiteto pirmininkas 2025–2026 m. · Vilniaus Dipolio RK</p>
+      </div>
+      <div class="person">
+        <!-- įkėlus nuotrauką: <img class="ph" src="img/aurimas.jpg" alt="Aurimas Girčys"> -->
+        <div class="mono">AG</div>
+        <h3>Aurimas Girčys</h3>
+        <p class="role">Rotary klubo „Vytis“ prezidentas 2025–2026 m.</p>
+      </div>
+      <div class="person">
+        <!-- įkėlus nuotrauką: <img class="ph" src="img/olegas.jpg" alt="Oleg Orishchenko"> -->
+        <div class="mono">OO</div>
+        <h3>Oleg Orishchenko</h3>
+        <p class="role">Projekto vadovas Ukrainoje, Charkivo valstybinio muzikos licėjaus direktorius</p>
+      </div>
+      <div class="person">
+        <div class="mono">SK</div>
+        <h3>Projekto mecenatas</h3>
+        <p class="role">„Stiprūs kartu“ — Edmundo Jakilaičio iniciatyva</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 — REKVIZITAI (vizitinės kortelės nugarėlė) -->
+<section id="rekvizitai" style="background:var(--cream);border-top:1px solid var(--line)">
+  <div class="wrap card-back">
+    <div>
+      <p class="eyebrow">Kaip paremti</p>
+      <h2 style="font-size:clamp(25px,3.8vw,34px)">Rekvizitai ir paramos sutartis</h2>
+      <div class="gold-rule"></div>
+      <div class="req">
+        <b>Gavėjas:</b> <span class="todo">[Vilniaus International Rotary klubas — tikslus pavadinimas]</span><br>
+        <b>Įmonės kodas:</b> <span class="todo">[kodas]</span><br>
+        <b>Sąskaita:</b> <span class="todo">LT00 0000 0000 0000 0000</span><br>
+        <b>Bankas:</b> <span class="todo">[banko pavadinimas]</span><br>
+        <b>Paskirtis:</b> „PMF 2026 — vieta Nr. ___ — [jūsų vardas]“
+      </div>
+      <div class="cta">
+        <a class="btn dark" href="paramos-sutartis.pdf" download>Paramos sutartis (PDF)</a>
+        <a class="btn ghost" style="color:var(--navy);border-color:var(--navy)" href="#autobusas">Laisvos vietos</a>
+      </div>
+      <p style="font-size:13.5px;color:var(--ink-soft);margin-top:18px">
+        Atlikę pavedimą parašykite mums — įrašysime jūsų vardą ant vietos ir atsiųsime patvirtinimą per 24 val.<br>
+        Kontaktai: <span class="todo">[el. paštas]</span> · <span class="todo">[telefonas]</span>
+      </p>
+    </div>
+
+    <div class="faq">
+      <p class="eyebrow" style="margin-bottom:14px">Trumpai</p>
+      <details open>
+        <summary>Kodėl reikia paramos, jei programa paruošta?</summary>
+        <p>Paruošta reiškia, kad viskas suplanuota: mokytojai, natos, salės, nakvynė. Nepadengtas tik finansavimas — kelionė ir dvi savaitės programos.</p>
+      </details>
+      <details>
+        <summary>Ar 900 € tikrai kainuoja vienas vaikas?</summary>
+        <p>39 000 € ÷ 43 vaikai = 907 €; suapvalinome iki 900 €. Lygiai taip pat 39 000 € ÷ 15 dienų = 2 600 € vienai dienai. Tas pats biudžetas, padalintas dviem būdais.</p>
+      </details>
+      <details>
+        <summary>Kur pervedami pinigai?</summary>
+        <p>Į atskirą projekto sąskaitą, kurią atidarė Vilniaus International Rotary klubas. Su kiekvienu rėmėju pasirašoma paramos sutartis, o po programos siunčiama išlaidų ataskaita su nuotraukomis.</p>
+      </details>
+      <details>
+        <summary>O jei nesurinksite visos sumos?</summary>
+        <p><span class="todo">[Įrašyti teisinę formuluotę — suderinti su Tomu.]</span> Organizatorių taisyklė: autobusas pajuda tik ties 100 %.</p>
+      </details>
+      <details>
+        <summary>Ar mano vardas bus viešas?</summary>
+        <p>Tik jei sutinkate. Be sutikimo rodome „Anonimas“.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 8 — PABAIGA -->
+<div class="band" style="background-image:url('img/vaikai.jpg')">
+  <div class="inner">
+    <p class="big">Autobusas pajuda tik tada,<br>kai užsipildo visos 43 vietos.</p>
+    <p class="sub">Rugpjūčio 31 d. jie arba lipa į autobusą, arba lieka namie. Trečio varianto nėra.</p>
+    <div class="cta"><a class="btn primary" href="#autobusas">Užpildyti vietą</a></div>
+  </div>
+</div>
+
+<footer>
+  Peace · Music · Freedom 2026 &nbsp;·&nbsp; 2026 m. rugpjūčio 31 – rugsėjo 14 d. &nbsp;·&nbsp; Daugai · Vilnius · Kaunas<br>
+  Organizuoja Vilniaus International Rotary klubas kartu su Rotary Club Kharkiv-City ir Rotary apygarda 1462.<br>
+  Vardai skelbiami tik gavus rėmėjo sutikimą.
+</footer>
+
+<div class="tip" id="tip"></div>
+
+<script>
+/* =====================================================================
+   ATNAUJINIMAS — keiskite tik šį bloką (2 kartus per dieną).
+   RAISED     — bendra surinkta suma. Vietos, dienos ir procentai
+                skaičiuojami iš jos automatiškai.
+   SEAT_NAMES — vardai ant vietų iš eilės nuo 1. Tik su sutikimu,
+                kitaip "Anonimas".
+   DAY_NAMES  — įmonė ar klubas prie konkrečios dienos, pvz. {3:"UAB X"}.
+   SUPPORTERS — rėmėjų siena. logo: "img/imone.png" rodo logotipą.
+   Statusai (2026-07-27 aptarimas): Mecenatas nuo 5 000 € ·
+   Partneris — verslas nuo 2 600 € arba Rotary klubas nuo 900 € ·
+   Rėmėjas — nuo 900 €. Minimali laukiama suma — 900 €.
+   ===================================================================== */
+const RAISED = 16550;
+
+const SEAT_NAMES = [
+  "„Stiprūs kartu“ · E. Jakilaičio iniciatyva","„Stiprūs kartu“ · E. Jakilaičio iniciatyva",
+  "„Stiprūs kartu“ · E. Jakilaičio iniciatyva","„Stiprūs kartu“ · E. Jakilaičio iniciatyva",
+  "„Stiprūs kartu“ · E. Jakilaičio iniciatyva","„Stiprūs kartu“ · E. Jakilaičio iniciatyva",
+  "„Stiprūs kartu“ · E. Jakilaičio iniciatyva","„Stiprūs kartu“ · E. Jakilaičio iniciatyva",
+  "„Stiprūs kartu“ · E. Jakilaičio iniciatyva","„Stiprūs kartu“ · E. Jakilaičio iniciatyva",
+  "„Stiprūs kartu“ · E. Jakilaičio iniciatyva",
+  "Rotary apygarda 1462","Rotary apygarda 1462",
+  "Alytaus r. savivaldybė","Alytaus r. savivaldybė",
+  "Ukrainos verslininkas Vilniuje","Ukrainos verslininkas Vilniuje",
+  "„Morning Rave“ · Vilniaus International RK"
+];
+
+const DAY_NAMES = {};
+
+const SUPPORTERS = {
+  mecenatai: [
+    {name:"„Stiprūs kartu“", note:"Edmundo Jakilaičio iniciatyva · 10 000 €"}
+  ],
+  partneriai: [
+    {name:"Rotary apygarda 1462", note:"2 000 €"},
+    {name:"Alytaus r. savivaldybė", note:"2 000 €"}
+  ],
+  remejai: [
+    {name:"Ukrainos verslininkas Vilniuje", note:"2 000 €"},
+    {name:"Vilniaus International Rotary klubas", note:"„Morning Rave“ · 550 €"}
+  ]
+};
+
+/* ---------- konstantos ---------- */
+const GOAL = 39000, SEATS = 43, DAYS = 15, SEAT_PRICE = 900, DAY_PRICE = 2600;
+
+const seatsTaken = Math.min(SEATS, Math.floor(RAISED / SEAT_PRICE));
+const daysTaken  = Math.min(DAYS,  Math.floor(RAISED / DAY_PRICE));
+const eur = n => n.toLocaleString('lt-LT').replace(/,/g,' ') + ' \u20ac';
+
+/* ---------- autobusas: 10 eiliu po 4 + galine is 3 ---------- */
+const busEl = document.getElementById('bus');
+function seatEl(n){
+  const el = document.createElement('div');
+  el.className = 'seat'; el.dataset.n = n;
+  el.innerHTML = `<span>${n}</span>`;
+  if(n <= seatsTaken){
+    el.classList.add('taken');
+    el.dataset.name = SEAT_NAMES[n-1] || "U\u017etikrinta parama";
+    el.setAttribute('aria-label', `Vieta ${n} \u2014 ${el.dataset.name}`);
+  } else {
+    el.setAttribute('aria-label', `Vieta ${n} \u2014 laisva`);
+  }
+  return el;
+}
+function buildBus(){
+  const rows = document.createElement('div');
+  rows.className = 'bus-rows';
+  let n = 1;
+  for(let r = 0; r < 10; r++){
+    const row = document.createElement('div');
+    row.className = 'bus-row';
+    row.appendChild(seatEl(n++)); row.appendChild(seatEl(n++));
+    row.appendChild(document.createElement('div'));
+    row.appendChild(seatEl(n++)); row.appendChild(seatEl(n++));
+    rows.appendChild(row);
+  }
+  const last = document.createElement('div');
+  last.className = 'bus-row last';
+  last.appendChild(seatEl(n++));
+  last.appendChild(document.createElement('div'));
+  last.appendChild(seatEl(n++)); last.appendChild(seatEl(n++));
+  rows.appendChild(last);
+  busEl.innerHTML = ''; busEl.appendChild(rows);
+}
+
+/* ---------- dienos ---------- */
+const daysEl = document.getElementById('days');
+function buildDays(){
+  daysEl.innerHTML = '';
+  for(let d = 1; d <= DAYS; d++){
+    const el = document.createElement('div');
+    el.className = 'day'; el.textContent = d;
+    if(d <= daysTaken){
+      el.classList.add('taken');
+      el.title = DAY_NAMES[d] || 'u\u017etikrinta';
+    } else {
+      el.title = '2 600 \u20ac';
+    }
+    el.setAttribute('aria-label', `Diena ${d} \u2014 ${el.title}`);
+    daysEl.appendChild(el);
+  }
+}
+
+/* ---------- remeju siena ---------- */
+const SUP_GROUPS = [
+  {key:'mecenatai',  title:'Mecenatai',  amt:'nuo 5 000 \u20ac', cls:'lg'},
+  {key:'partneriai', title:'Partneriai', amt:'verslas nuo 2 600 \u20ac \u00b7 Rotary klubas nuo 900 \u20ac', cls:'md'},
+  {key:'remejai',    title:'R\u0117m\u0117jai',    amt:'nuo 900 \u20ac', cls:'md'}
+];
+function buildSupporters(){
+  const wall = document.getElementById('supWall');
+  wall.innerHTML = '';
+  SUP_GROUPS.forEach(g => {
+    const list = SUPPORTERS[g.key] || [];
+    const box = document.createElement('div');
+    box.className = 'sup-group';
+    box.innerHTML = `<div class="sup-head"><h3>${g.title}</h3><span class="amt">${g.amt}</span><span class="bar"></span></div>`;
+    if(!list.length){
+      box.insertAdjacentHTML('beforeend','<p class="sup-empty">\u0160i vieta dar laisva \u2014 ji gali b\u016bti j\u016bs\u0173.</p>');
+    } else {
+      const grid = document.createElement('div');
+      grid.className = 'sup-grid';
+      list.forEach(sup => {
+        const el = document.createElement('div');
+        el.className = 'sup ' + g.cls;
+        el.innerHTML = sup.logo ? `<img src="${sup.logo}" alt="${sup.name}">`
+          : `<span>${sup.name}${sup.note ? `<small>${sup.note}</small>` : ''}</span>`;
+        grid.appendChild(el);
+      });
+      box.appendChild(grid);
+    }
+    wall.appendChild(box);
+  });
+}
+
+/* ---------- progresas ---------- */
+function paintProgress(){
+  const pct = Math.min(100, RAISED / GOAL * 100);
+  const left = GOAL - RAISED;
+  document.getElementById('heroNum').textContent = SEATS - seatsTaken;
+  document.getElementById('pSeats').textContent = seatsTaken;
+  document.getElementById('pEur').textContent = eur(RAISED) + ' i\u0161 ' + eur(GOAL);
+  document.getElementById('pFill').style.width = pct.toFixed(1) + '%';
+  const mec = document.getElementById('mecCount');
+  if(mec) mec.textContent = Math.ceil(left / 5000);
+}
+
+/* ---------- vardas ant uzimtos vietos ---------- */
+const tip = document.getElementById('tip');
+busEl.addEventListener('mousemove', e => {
+  const el = e.target.closest('.seat');
+  if(el && el.classList.contains('taken')){
+    tip.textContent = `Vieta ${el.dataset.n} \u00b7 ${el.dataset.name}`;
+    tip.style.left = Math.min(e.clientX + 14, window.innerWidth - 250) + 'px';
+    tip.style.top = (e.clientY + 16) + 'px';
+    tip.classList.add('show');
+  } else tip.classList.remove('show');
+});
+busEl.addEventListener('mouseleave', () => tip.classList.remove('show'));
+
+buildBus(); buildDays(); buildSupporters(); paintProgress();
+</script>
+</body>
+</html>
