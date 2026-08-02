@@ -163,11 +163,11 @@ figure{margin:0}
 .dark .sec-head p{color:#C3D0E4}
 .sup-group{margin-bottom:30px}
 .sup-group:last-child{margin-bottom:0}
-.sup-head{display:flex;align-items:baseline;gap:13px;margin-bottom:14px}
+.sup-head{display:flex;align-items:baseline;gap:13px;margin-bottom:14px;flex-wrap:wrap}
 .sup-head h3{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;
   font-weight:700;color:var(--gold);white-space:nowrap}
-.sup-head .amt{font-size:12px;color:#8FA3C2;white-space:nowrap}
-.sup-head .bar{flex:1;height:1px;background:rgba(255,255,255,.18);min-width:12px}
+.sup-head .amt{font-size:12px;color:#8FA3C2}
+.sup-head .bar{flex:1 1 40px;height:1px;background:rgba(255,255,255,.18);min-width:12px}
 .sup-grid{display:flex;flex-wrap:wrap;gap:12px}
 .sup{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:5px;
   display:flex;align-items:center;justify-content:center;text-align:center;padding:16px 22px;
@@ -209,10 +209,18 @@ figure{margin:0}
   font-size:14px;line-height:1.95}
 .req b{font-weight:600}
 .todo{color:#A8442E;font-weight:600}
-.faq details{border-bottom:1px solid var(--line);padding:14px 0}
+a.contact{display:inline-block;min-height:44px;line-height:44px;padding:0 10px;margin:2px 4px 2px 0;
+  color:var(--navy);font-weight:600;text-decoration:none;border:1px solid var(--line);
+  border-radius:4px;background:#fff;white-space:nowrap}
+a.contact:hover{background:var(--cream)}
+a.contact:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+.faq details{border-bottom:1px solid var(--line);padding:5px 0}
 .faq details:first-of-type{border-top:1px solid var(--line)}
 .faq summary{cursor:pointer;font-family:'Source Serif 4',serif;font-size:17px;font-weight:600;
-  list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+  list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:baseline;
+  min-height:44px;padding:9px 0}
+.faq summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";color:var(--gold);font-size:21px;font-weight:400;line-height:1}
 .faq details[open] summary::after{content:"–"}
@@ -451,7 +459,7 @@ footer a{color:var(--gold-soft)}
       </div>
       <p style="font-size:13.5px;color:var(--ink-soft);margin-top:18px">
         Atsisiųskite sutartį, užpildykite savo rekvizitus ir atsiųskite mums — įrašysime jūsų vardą ant vietos ir atsiųsime patvirtinimą per 24 val.<br>
-        Kontaktai: <a href="mailto:tomas.marcinkus@yahoo.com?subject=Peace%20Music%20Freedom%202026" style="color:var(--navy)">tomas.marcinkus@yahoo.com</a> · <a href="tel:+37061027939" style="color:var(--navy)">+370 610 27 939</a>
+        Kontaktai: <a class="contact" href="mailto:tomas.marcinkus@yahoo.com?subject=Peace%20Music%20Freedom%202026">tomas.marcinkus@yahoo.com</a> <a class="contact" href="tel:+37061027939">+370 610 27 939</a>
       </p>
     </div>
 
