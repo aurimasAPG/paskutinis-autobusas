@@ -222,7 +222,7 @@ footer a{color:var(--gold-soft)}
   <div class="wrap hero-grid">
     <div>
       <p class="eyebrow">Peace · Music · Freedom 2026</p>
-      <div class="bignum" id="heroNum">25</div>
+      <div class="bignum" id="heroNum">23</div>
       <div class="bignum-label">tuščios vietos autobuse</div>
       <h1>Kiekviena tuščia vieta — vaikas, kuris lieka Charkive.</h1>
       <div class="gold-rule"></div>
@@ -256,6 +256,7 @@ footer a{color:var(--gold-soft)}
       <p>Dvi savaitės Lietuvoje yra vienintelė vieta metuose, kur jie groja kartu. Tai trečia vasara iš eilės: per dvi ankstesnes vaikai surengė 12 koncertų.</p>
       <div class="factline">
         <div><div class="n">43</div><div class="l">vaikai, 8–16 m.</div></div>
+        <div><div class="n">12</div><div class="l">dėstytojų</div></div>
         <div><div class="n">15</div><div class="l">programos dienų</div></div>
         <div><div class="n">39 000 €</div><div class="l">visa programa</div></div>
       </div>
@@ -281,7 +282,7 @@ footer a{color:var(--gold-soft)}
       <div>
         <div class="progress-line">
           <span><span class="big" id="pSeats">18</span> / 43 užpildytos</span>
-          <span id="pEur">16 550 € iš 39 000 €</span>
+          <span id="pEur">18 000 € iš 39 000 €</span>
         </div>
         <div class="progress-bar"><i id="pFill" style="width:42%"></i></div>
         <div class="bus" id="bus" aria-label="Autobuso salonas, 43 vietos"></div>
@@ -332,7 +333,7 @@ footer a{color:var(--gold-soft)}
     <div id="supWall"></div>
     <p class="gap-line">
       „Stiprūs kartu“ 10 000 € pervedė tiesiogiai Daugų technologijų ir verslo mokyklai, kurioje apsistos vaikai.
-      Iš viso užtikrinta 16 550 € — 18 vietų iš 43. Lieka <b>25 vietos, 22 450 €</b>.
+      Iš viso užtikrinta 18 000 € — 46 % biudžeto, 20 vietų iš 43. Lieka <b>23 vietos, ~21 000 €</b>.
     </p>
   </div>
 </section>
@@ -352,15 +353,14 @@ footer a{color:var(--gold-soft)}
         <p class="role">Rotary apygardos 1462 valdytoja 2022–2023 m. · Vilniaus Šv. Kristoforo RK, klubo prezidentė 2018–2019 m., Paul Harris Fellow</p>
       </div>
       <div class="person">
-        <!-- įkėlus nuotrauką: <img class="ph" src="img/tomas.jpg" alt="Tomas Marcinkus"> -->
-        <div class="mono">TM</div>
+        <img class="ph" src="img/tomas.jpg" alt="Tomas Marcinkus">
         <h3>Tomas Marcinkus</h3>
         <p class="role">Vilniaus International Rotary klubo prezidentas 2025–2026 m.</p>
       </div>
       <div class="person">
         <img class="ph" src="img/marius.jpg" alt="Marius Plitninkas">
         <h3>Marius Plitninkas</h3>
-        <p class="role">Rotary apygardos 1462 narystės komiteto pirmininkas · Vilniaus Dipolio RK · Baltijos šalių vadovas, Luminor Bank</p>
+        <p class="role">Rotary apygardos 1462 narystės komiteto pirmininkas · Rotary klubo „Dipolis“ prezidentas 2015–2016 m.</p>
       </div>
       <div class="person">
         <img class="ph" src="img/aurimas.jpg" alt="Aurimas Girčys">
@@ -368,8 +368,7 @@ footer a{color:var(--gold-soft)}
         <p class="role">Rotary klubo „Vytis“ prezidentas 2025–2026 m.</p>
       </div>
       <div class="person">
-        <!-- įkėlus nuotrauką: <img class="ph" src="img/olegas.jpg" alt="Oleg Orishchenko"> -->
-        <div class="mono">OO</div>
+        <img class="ph" src="img/olegas.jpg" alt="Oleg Orishchenko">
         <h3>Oleg Orishchenko</h3>
         <p class="role">Projekto vadovas Ukrainoje, Charkivo valstybinio muzikos licėjaus direktorius</p>
       </div>
@@ -462,7 +461,7 @@ footer a{color:var(--gold-soft)}
    Partneris — verslas nuo 2 600 € arba Rotary klubas nuo 900 € ·
    Rėmėjas — nuo 900 €. Minimali laukiama suma — 900 €.
    ===================================================================== */
-const RAISED = 16550;
+const RAISED = 18000;
 
 const SEAT_NAMES = [
   "„Stiprūs kartu“ · E. Jakilaičio iniciatyva","„Stiprūs kartu“ · E. Jakilaičio iniciatyva",
@@ -474,7 +473,7 @@ const SEAT_NAMES = [
   "Rotary apygarda 1462","Rotary apygarda 1462",
   "Alytaus r. savivaldybė","Alytaus r. savivaldybė",
   "Ukrainos verslininkas Vilniuje","Ukrainos verslininkas Vilniuje",
-  "„Morning Rave“ · Vilniaus International RK"
+  "Vilniaus International Rotary klubas","Vilniaus International Rotary klubas"
 ];
 
 const DAY_NAMES = {};
@@ -485,11 +484,11 @@ const SUPPORTERS = {
   ],
   partneriai: [
     {name:"Rotary apygarda 1462", note:"2 000 €"},
+    {name:"Vilniaus International Rotary klubas", note:"2 000 €"},
     {name:"Alytaus r. savivaldybė", note:"2 000 €"}
   ],
   remejai: [
-    {name:"Ukrainos verslininkas Vilniuje", note:"2 000 €"},
-    {name:"Vilniaus International Rotary klubas", note:"„Morning Rave“ · 550 €"}
+    {name:"Ukrainos verslininkas Vilniuje", note:"2 000 €"}
   ]
 };
 
