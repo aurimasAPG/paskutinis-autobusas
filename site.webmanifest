@@ -1,0 +1,15 @@
+{
+  "name": "Peace · Music · Freedom 2026",
+  "short_name": "PMF 2026",
+  "description": "Parama Charkivo valstybinio muzikos licėjaus vaikų stovyklai ir koncertams Lietuvoje.",
+  "lang": "lt",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#16325C",
+  "theme_color": "#16325C",
+  "icons": [
+    { "src": "/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
