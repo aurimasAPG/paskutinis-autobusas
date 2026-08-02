@@ -47,8 +47,12 @@ section{padding:64px 0}
 .cta{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
 
 /* org bar */
-.orgbar{background:var(--navy-deep);color:#A9BBD6;text-align:center;padding:12px 22px;
-  font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+.orgbar{background:var(--navy-deep);color:#A9BBD6;padding:11px 22px;
+  font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;
+  display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;text-align:center}
+.orgbar img{height:22px;width:auto;display:block;flex:none}
+.orgbar .sep{width:1px;height:16px;background:rgba(255,255,255,.22);flex:none}
+@media(max-width:520px){.orgbar .sep{display:none}}
 
 /* 1 — hero */
 .hero{background:var(--navy);color:#fff;padding:62px 0 66px}
@@ -142,6 +146,16 @@ figure{margin:0}
   color:var(--ink-soft);transition:border-color .15s}
 .day.taken{background:var(--navy);border-color:var(--navy);color:var(--gold-soft)}
 
+/* 3b — vaikų balsas */
+.voice{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.voice-grid{display:grid;grid-template-columns:1fr auto;gap:44px;align-items:center}
+@media(max-width:760px){.voice-grid{grid-template-columns:1fr;gap:28px}}
+.qr{background:#fff;border:1px solid var(--line);border-radius:6px;padding:16px;text-align:center;
+  width:190px;justify-self:center}
+.qr img{width:150px;height:150px;display:block;margin:0 auto}
+.qr figcaption{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+  color:var(--ink-soft);margin-top:10px;line-height:1.5}
+
 /* 5 — rėmėjai */
 .dark{background:var(--navy);color:#fff}
 .dark h2,.dark h3{color:#fff}
@@ -164,6 +178,14 @@ figure{margin:0}
 .sup.md{min-width:min(100%,190px);min-height:70px;font-size:14.5px;flex:1 1 190px;max-width:300px}
 .sup small{display:block;font-weight:400;font-size:11.5px;color:#A9BBD6;margin-top:5px;font-family:'Inter',sans-serif}
 .sup-empty{font-size:14px;color:#8FA3C2;font-style:italic}
+.mecenas-card{border:1.5px solid var(--gold);background:rgba(200,153,46,.1);border-radius:6px;
+  padding:26px 28px;margin-bottom:34px;text-align:center}
+.mecenas-badge{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;
+  color:var(--gold);margin-bottom:12px}
+.mecenas-badge span{color:#8FA3C2;font-weight:500;letter-spacing:.06em;text-transform:none}
+.mecenas-logo{max-height:56px;max-width:230px;margin:0 auto 12px;display:block}
+.mecenas-name{font-family:'Source Serif 4',serif;font-size:clamp(24px,3.4vw,31px);font-weight:700;color:#fff}
+.mecenas-note{font-size:13.5px;color:#A9BBD6;margin-top:7px}
 .gap-line{margin-top:34px;padding-top:22px;border-top:1px solid rgba(255,255,255,.18);
   font-size:15.5px;color:#C3D0E4}
 .gap-line b{color:var(--gold-soft)}
@@ -215,7 +237,11 @@ footer a{color:var(--gold-soft)}
 </head>
 <body>
 
-<div class="orgbar">Vilniaus International Rotary klubas &nbsp;·&nbsp; Rotary Club Kharkiv-City &nbsp;·&nbsp; Rotary apygarda 1462</div>
+<div class="orgbar">
+  <img src="img/logo-rotary-white.png" alt="Rotary International">
+  <span class="sep"></span>
+  <span>Vilniaus International Rotary klubas &nbsp;·&nbsp; Rotary Club Kharkiv-City &nbsp;·&nbsp; Rotary apygarda 1462</span>
+</div>
 
 <!-- 1 — HERO -->
 <header class="hero">
@@ -264,6 +290,25 @@ footer a{color:var(--gold-soft)}
     <figure class="side-photo">
       <img src="img/koncertas.jpg" alt="Baigiamasis koncertas Dauguose su Ukrainos ir Lietuvos vėliavomis">
       <figcaption>Baigiamasis koncertas · Daugai, 2025</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 3b — VAIKŲ BALSAS -->
+<section class="voice">
+  <div class="wrap voice-grid">
+    <div>
+      <p class="eyebrow">Ką sako patys vaikai</p>
+      <h2>90 sekundžių, kurios paaiškina daugiau nei bet kuris skaičius.</h2>
+      <div class="gold-rule"></div>
+      <p>Trumpas vaizdo įrašas iš praėjusios vasaros — vaikai patys pasakoja, ką jiems reiškia šios dvi savaitės.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://youtu.be/TXZ4RaCz6hg" target="_blank" rel="noopener">Žiūrėti vaizdo įrašą</a>
+      </div>
+    </div>
+    <figure class="qr">
+      <img src="img/qr-video.png" alt="QR kodas į vaikų vaizdo įrašą">
+      <figcaption>Nuskenuokite<br>— 90 sek.</figcaption>
     </figure>
   </div>
 </section>
@@ -330,6 +375,14 @@ footer a{color:var(--gold-soft)}
       <div class="gold-rule"></div>
       <p>Kiekvienas vardas čia — vieta, kuri nebėra tuščia.</p>
     </div>
+
+    <div class="mecenas-card">
+      <div class="mecenas-badge">Projekto mecenatas <span>· nuo 5 000 €</span></div>
+      <!-- įkėlus logotipą: <img class="mecenas-logo" src="img/logo-stiprus-kartu.png" alt="„Stiprūs kartu“"> -->
+      <div class="mecenas-name">„Stiprūs kartu“</div>
+      <div class="mecenas-note">Edmundo Jakilaičio iniciatyva · 10 000 € — pirmosios 11 vietų autobuse</div>
+    </div>
+
     <div id="supWall"></div>
     <p class="gap-line">
       „Stiprūs kartu“ 10 000 € pervedė tiesiogiai Daugų technologijų ir verslo mokyklai, kurioje apsistos vaikai.
@@ -365,17 +418,12 @@ footer a{color:var(--gold-soft)}
       <div class="person">
         <img class="ph" src="img/aurimas.jpg" alt="Aurimas Girčys">
         <h3>Aurimas Girčys</h3>
-        <p class="role">Rotary klubo „Vytis“ prezidentas 2025–2026 m.</p>
+        <p class="role">Rotary klubo „Vytis“ prezidentas 2025–2026 m., Paul Harris Fellow</p>
       </div>
       <div class="person">
         <img class="ph" src="img/olegas.jpg" alt="Oleg Orishchenko">
         <h3>Oleg Orishchenko</h3>
-        <p class="role">Projekto vadovas Ukrainoje, Charkivo valstybinio muzikos licėjaus direktorius</p>
-      </div>
-      <div class="person">
-        <div class="mono">SK</div>
-        <h3>Projekto mecenatas</h3>
-        <p class="role">„Stiprūs kartu“ — Edmundo Jakilaičio iniciatyva</p>
+        <p class="role">Projekto vadovas Ukrainoje · Charkivo valstybinio muzikos licėjaus direktorius · Rotary Club Kharkiv-City prezidentas 2026–2027 m.</p>
       </div>
     </div>
   </div>
@@ -389,19 +437,21 @@ footer a{color:var(--gold-soft)}
       <h2 style="font-size:clamp(25px,3.8vw,34px)">Rekvizitai ir paramos sutartis</h2>
       <div class="gold-rule"></div>
       <div class="req">
-        <b>Gavėjas:</b> <span class="todo">[Vilniaus International Rotary klubas — tikslus pavadinimas]</span><br>
-        <b>Įmonės kodas:</b> <span class="todo">[kodas]</span><br>
-        <b>Sąskaita:</b> <span class="todo">LT00 0000 0000 0000 0000</span><br>
-        <b>Bankas:</b> <span class="todo">[banko pavadinimas]</span><br>
-        <b>Paskirtis:</b> „PMF 2026 — vieta Nr. ___ — [jūsų vardas]“
+        <b>Gavėjas:</b> asociacija „Vilniaus tarptautinis Rotary klubas“<br>
+        <b>Adresas:</b> Didžioji g. 35, Vilnius<br>
+        <b>Juridinio asmens ir paramos gavėjo kodas:</b> 126172346<br>
+        <b>Bankas:</b> AB Luminor bankas<br>
+        <b>Sąskaita:</b> <span class="todo">LT00 0000 0000 0000 0000 — projekto sąskaita atidaroma šiomis dienomis</span><br>
+        <b>Paskirtis:</b> Projektui „Peace · Music · Freedom 2026“ (Charkivo valstybinio muzikos licėjaus vaikų kūrybinei stovyklai ir koncertų programai Lietuvoje) paremti<br>
+        <span style="color:var(--ink-soft);font-size:12.5px">Jei paskirties laukas per trumpas: <i>Projektui „Peace · Music · Freedom 2026“ paremti — [jūsų vardas arba organizacija]</i></span>
       </div>
       <div class="cta">
-        <a class="btn dark" href="paramos-sutartis.pdf" download>Paramos sutartis (PDF)</a>
+        <a class="btn dark" href="paramos-sutartis.docx" download>Paramos sutartis (Word)</a>
         <a class="btn ghost" style="color:var(--navy);border-color:var(--navy)" href="#autobusas">Laisvos vietos</a>
       </div>
       <p style="font-size:13.5px;color:var(--ink-soft);margin-top:18px">
-        Atlikę pavedimą parašykite mums — įrašysime jūsų vardą ant vietos ir atsiųsime patvirtinimą per 24 val.<br>
-        Kontaktai: <span class="todo">[el. paštas]</span> · <span class="todo">[telefonas]</span>
+        Atsisiųskite sutartį, užpildykite savo rekvizitus ir atsiųskite mums — įrašysime jūsų vardą ant vietos ir atsiųsime patvirtinimą per 24 val.<br>
+        Kontaktai: <span class="todo">[projekto el. paštas]</span> · <a href="tel:+37061027939" style="color:var(--navy)">+370 610 27 939</a>
       </p>
     </div>
 
@@ -417,11 +467,11 @@ footer a{color:var(--gold-soft)}
       </details>
       <details>
         <summary>Kur pervedami pinigai?</summary>
-        <p>Į atskirą projekto sąskaitą, kurią atidarė Vilniaus International Rotary klubas. Su kiekvienu rėmėju pasirašoma paramos sutartis, o po programos siunčiama išlaidų ataskaita su nuotraukomis.</p>
+        <p>Į atskirą projekto sąskaitą asociacijos „Vilniaus tarptautinis Rotary klubas“ vardu (kodas 126172346, AB Luminor bankas). Klubui paramos gavėjo statusas suteiktas 2004 m. kovo 12 d., todėl juridiniai asmenys paramą gali apskaityti teisės aktų nustatyta tvarka. Su kiekvienu rėmėju pasirašoma paramos sutartis, o po programos siunčiama išlaidų ataskaita su nuotraukomis.</p>
       </details>
       <details>
         <summary>O jei nesurinksite visos sumos?</summary>
-        <p><span class="todo">[Įrašyti teisinę formuluotę — suderinti su Tomu.]</span> Organizatorių taisyklė: autobusas pajuda tik ties 100 %.</p>
+        <p>Paramą grąžinsime arba, jums raštiškai davus sutikimą, panaudosime kitiems panašaus pobūdžio labdaros projektams paremti.</p>
       </details>
       <details>
         <summary>Ar mano vardas bus viešas?</summary>
@@ -554,8 +604,9 @@ function buildDays(){
 }
 
 /* ---------- remeju siena ---------- */
+/* Mecenatai rodomi atskira i\u0161kilia kortele vir\u0161 sienos (.mecenas-card),
+   tod\u0117l \u010dia lieka tik partneriai ir r\u0117m\u0117jai. */
 const SUP_GROUPS = [
-  {key:'mecenatai',  title:'Mecenatai',  amt:'nuo 5 000 \u20ac', cls:'lg'},
   {key:'partneriai', title:'Partneriai', amt:'verslas nuo 2 600 \u20ac \u00b7 Rotary klubas nuo 900 \u20ac', cls:'md'},
   {key:'remejai',    title:'R\u0117m\u0117jai',    amt:'nuo 900 \u20ac', cls:'md'}
 ];
