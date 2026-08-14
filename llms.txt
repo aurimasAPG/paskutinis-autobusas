@@ -12,9 +12,9 @@
 - **Paskutinė paramos diena:** 2026 m. rugpjūčio 29 d.
 - **Vietos:** stovykla ir repeticijos Dauguose (Alytaus r.), koncertai Vilniuje, Kaune ir Dauguose
 - **Kelinta kartas:** trečia vasara iš eilės; per dvi ankstesnes vaikai surengė 12 koncertų
-- **Bendras biudžetas:** 38 000 EUR
-- **Jau užtikrinta:** 29 200 EUR (77 %)
-- **Dar reikia:** 8 800 EUR (11 laisvų vietų iš 43)
+- **Bendras biudžetas:** 37 638 EUR
+- **Jau užtikrinta:** 29 200 EUR (78 %)
+- **Dar reikia:** 8 438 EUR (11 laisvų vietų iš 43)
 - **Nakvynė:** Daugų technologijų ir verslo mokykla
 
 ## Kodėl projektas reikalingas
@@ -26,10 +26,10 @@ kai šie vaikai groja drauge.
 
 ## Kaip padalintas biudžetas
 
-38 000 EUR padalinta dviem būdais, kad rėmėjas matytų, ką konkrečiai padengia:
+37 638 EUR padalinta dviem būdais, kad rėmėjas matytų, ką konkrečiai padengia:
 
-- **Vieta autobuse — 900 EUR:** vieno vaiko visos 15 programos dienų (38 000 ÷ 43 vaikai = 884, apvalinta iki 900)
-- **Stovyklos diena — 2 600 EUR:** visų 43 vaikų viena diena (38 000 ÷ 15 dienų = 2 533, apvalinta iki 2 600)
+- **Vieta autobuse — 900 EUR:** vieno vaiko visos 15 programos dienų (37 638 ÷ 43 vaikai = 875, apvalinta iki 900)
+- **Stovyklos diena — 2 600 EUR:** visų 43 vaikų viena diena (37 638 ÷ 15 dienų = 2 509, apvalinta iki 2 600)
 
 ## Paramos pakopos
 
