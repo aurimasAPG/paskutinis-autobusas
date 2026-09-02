@@ -404,8 +404,8 @@ footer a{color:var(--gold-soft)}
 
 <!-- 2 — SKUBA -->
 <div class="urgency">
-  Programa paruošta: mokytojai, natos, klasės, nakvynė Daugų technologijų ir verslo mokykloje.
-  Trūksta tik autobuso. <b>Paskutinė paramos diena — <time datetime="2026-08-29">rugpjūčio 29 d.</time></b>
+  Vaikai jau Lietuvoje — programa prasidėjo <time datetime="2026-08-31">rugpjūčio 31 d.</time>
+  <b>Biudžetas dar nepadengtas: trūksta paskutinių 3 000 €.</b>
 </div>
 
 <!-- 3 — ESMĖ -->
@@ -530,7 +530,6 @@ footer a{color:var(--gold-soft)}
     <p class="gap-line">
       „Stiprūs kartu“ 10 000 € pervedė tiesiogiai Daugų technologijų ir verslo mokyklai, kurioje apsistos vaikai.
       Iš viso užtikrinta 34 200 € — 92 % biudžeto, 35 vietos iš 38. Lieka <b>3 vietos, 3 000 €</b>.
-      Naujausių rėmėjų vardus paskelbsime gavę jų sutikimą.
     </p>
   </div>
 </section>
@@ -681,17 +680,19 @@ const SEAT_NAMES = [
   "Taras Sitenko","Taras Sitenko",
   /* 23–25 · Pakruojo r. savivaldybė */
   "Pakruojo r. savivaldybė","Pakruojo r. savivaldybė","Pakruojo r. savivaldybė",
-  /* 26 · Vilniaus Perkūno ir Pakruojo Rotary klubai */
-  "Vilniaus Perkūno ir Pakruojo Rotary klubai",
+  /* 26 · Perkūno + Pakruojo + Marijampolės RK (po dalį vietos) */
+  "Vilniaus Perkūno, Pakruojo ir Marijampolės Rotary klubai",
   /* 27 · Druskininkų Rotary klubas „Sūrutis“ */
   "Druskininkų Rotary klubas „Sūrutis“",
-  /* 28–29 · Rėmėjas iš Ukrainos (kuras) */
-  "Rėmėjas iš Ukrainos · kuras","Rėmėjas iš Ukrainos · kuras",
-  /* 30–33 · rėmėjai, kurių sutartys dar pasirašomos — vardai bus paskelbti */
-  "Užtikrinta parama","Užtikrinta parama","Užtikrinta parama","Užtikrinta parama",
-  /* 34 · Rotary Club of Mystic (JAV) */
-  "Rotary Club of Mystic (JAV)"
-  /* 35 · rodoma „Užtikrinta parama“, kol nežinome tikslios sumos priskyrimo */
+  /* 28–29 · SVOI Sunoil (Ukraina) — kuras */
+  "SVOI Sunoil · kuras","SVOI Sunoil · kuras",
+  /* 30–31 · Allianz Lietuva */
+  "Allianz Lietuva","Allianz Lietuva",
+  /* 32–33 · UAB „CONER“ */
+  "UAB „CONER“","UAB „CONER“",
+  /* 34–35 · Rotary District 7980 „Opus for Peace“ (JAV) */
+  "Rotary District 7980 „Opus for Peace“ · JAV",
+  "Rotary District 7980 „Opus for Peace“ · JAV"
 ];
 
 const DAY_NAMES = {};
@@ -701,23 +702,31 @@ const SUPPORTERS = {
     {name:"VšĮ „Stiprūs kartu“", note:"Edmundo Jakilaičio iniciatyva · 10 000 €"}
   ],
   partneriai: [
-    {name:"Pakruojo r. savivaldybė"},
-    {name:"Alytaus r. savivaldybė"},
+    {name:"Pakruojo rajono savivaldybė"},
+    {name:"Alytaus rajono savivaldybė"},
     {name:"Rotary apygarda 1462"},
     {name:"Vilniaus tarptautinis Rotary klubas"},
     {name:"Vilniaus Šv. Kristoforo Rotary klubas"},
     {name:"Vilnius LITUA Rotary klubas"},
     {name:"Druskininkų Rotary klubas „Sūrutis“"},
-    {name:"Rotary Club of Mystic", note:"JAV"}
+    {name:"Rotary District 7980 „Opus for Peace“", note:"JAV · per RC of Mystic"}
   ],
   remejai: [
     {name:"Taras Sitenko"},
-    {name:"Rėmėjas iš Ukrainos", note:"kuras"},
+    {name:"SVOI Sunoil", note:"Ukraina · kuras"},
+    {name:"UAB „CONER“"},
+    {name:"Allianz Lietuva"},
     {name:"Vilniaus Perkūno Rotary klubas"},
     {name:"Pakruojo Rotary klubas"},
+    {name:"Marijampolės Rotary klubas"},
     {name:"Rotary klubas „Vytis“"},
     {name:"Rotary klubas „Dipolis“"},
     {name:"Lietuvos Tūkstantmečio Rotary klubas"}
+  ],
+  institucijos: [
+    {name:"Daugų technologijos ir verslo mokykla"},
+    {name:"Lietuvos nacionalinis operos ir baleto teatras"},
+    {name:"Nacionalinis Kauno dramos teatras"}
   ],
   informaciniai: [
     {name:"15min.lt"}
@@ -806,9 +815,10 @@ function buildDays(){
 /* Mecenatai rodomi atskira i\u0161kilia kortele vir\u0161 sienos (.mecenas-card),
    tod\u0117l \u010dia lieka tik partneriai ir r\u0117m\u0117jai. */
 const SUP_GROUPS = [
-  {key:'partneriai',    title:'Partneriai',             amt:'', cls:'md'},
-  {key:'remejai',       title:'R\u0117m\u0117jai',      amt:'', cls:'md'},
-  {key:'informaciniai', title:'Informacinis partneris', amt:'', cls:'md'}
+  {key:'partneriai',    title:'Partneriai',              amt:'', cls:'md'},
+  {key:'remejai',       title:'R\u0117m\u0117jai',       amt:'', cls:'md'},
+  {key:'institucijos',  title:'Partner\u0117s institucijos', amt:'', cls:'md'},
+  {key:'informaciniai', title:'Informacinis partneris',  amt:'', cls:'md'}
 ];
 function buildSupporters(){
   const wall = document.getElementById('supWall');
