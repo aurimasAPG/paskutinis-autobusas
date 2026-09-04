@@ -1,9 +1,11 @@
 # Peace · Music · Freedom 2026
 
 > Labdaros projektas, kuriuo 38 jauni muzikantai iš Charkivo (Ukraina) — valstybinio muzikos
-> licėjaus ir kitų miesto meno mokyklų — 2026 m. rugpjūčio 31 – rugsėjo 14 d. atvyksta
-> į Lietuvą dviem savaitėms muzikos stovyklos
-> ir koncertų. Projektą organizuoja Vilniaus tarptautinis Rotary klubas.
+> licėjaus ir kitų miesto meno mokyklų — 2026 m. rugpjūčio 31 – rugsėjo 14 d. atvyko
+> į Lietuvą dviem savaitėms muzikos stovyklos ir koncertų. Projekto biudžetas surinktas
+> 100 %. Vieši koncertai: Daugai rugsėjo 6 d., Nacionalinis Kauno dramos teatras rugsėjo 9 d.,
+> Lietuvos nacionalinio operos ir baleto teatro Kamerinė salė rugsėjo 10 d.
+> Projektą organizuoja Vilniaus tarptautinis Rotary klubas.
 
 ## Esminiai faktai
 
@@ -11,11 +13,11 @@
 - **Kas dalyvauja:** 38 jauni muzikantai (8–16 m.) ir 11 dėstytojų iš Charkivo — valstybinio muzikos licėjaus (vienos iš keturių specializuotų muzikos mokyklų Ukrainoje) ir kitų miesto meno mokyklų
 - **Datos:** 2026 m. rugpjūčio 31 d. – rugsėjo 14 d. (15 programos dienų)
 - **Programa jau vyksta:** vaikai atvyko 2026 m. rugpjūčio 31 d.
-- **Vietos:** stovykla ir repeticijos Dauguose (Alytaus r.), planuojami koncertai Dauguose, Kaune, Pakruojyje ir Vilniuje
+- **Vietos:** stovykla ir repeticijos Dauguose (Alytaus r.), vieši koncertai Dauguose, Kaune ir Vilniuje
 - **Kelinta kartas:** trečia vasara iš eilės; per dvi ankstesnes vaikai surengė 12 koncertų
 - **Bendras biudžetas:** 37 200 EUR
-- **Jau užtikrinta:** 34 200 EUR (92 %)
-- **Dar reikia:** 3 000 EUR (3 laisvos vietos iš 38)
+- **Finansavimas surinktas:** 37 200 EUR (100 %) — visos 38 vietos autobuse turi rėmėjo vardą
+- **Dar reikia:** nieko; paramos rinkimo etapas baigtas
 - **Nakvynė:** Daugų technologijų ir verslo mokykla
 
 ## Kodėl projektas reikalingas
@@ -38,7 +40,7 @@ kai šie vaikai groja drauge.
 - **Partneris** — verslas nuo 2 480 EUR arba Rotary klubas nuo 980 EUR
 - **Rėmėjas** — nuo 980 EUR
 
-## Jau parėmė (34 200 EUR, 35 vietos iš 38)
+## Parėmė (37 200 EUR, visos 38 vietos iš 38)
 
 Konkrečios kiekvieno rėmėjo sumos viešai neskelbiamos.
 
@@ -56,6 +58,7 @@ Konkrečios kiekvieno rėmėjo sumos viešai neskelbiamos.
 - Vilnius LITUA Rotary klubas
 - Druskininkų Rotary klubas „Sūrutis“
 - Rotary District 7980 „Opus for Peace“ (JAV, per Rotary Club of Mystic)
+- Lietuvos nacionalinis operos ir baleto teatras — rėmėjas ir koncerto Kamerinėje salėje partneris
 
 **Rėmėjai**
 
@@ -72,9 +75,8 @@ Konkrečios kiekvieno rėmėjo sumos viešai neskelbiamos.
 
 **Partnerės institucijos**
 
-- Viešoji įstaiga Daugų technologijos ir verslo mokykla — apgyvendinimas
-- Lietuvos nacionalinis operos ir baleto teatras
-- Nacionalinis Kauno dramos teatras
+- Viešoji įstaiga Daugų technologijos ir verslo mokykla — apgyvendinimas ir koncertas Dauguose
+- Nacionalinis Kauno dramos teatras — koncerto salė
 
 **Informacinis partneris**
 
@@ -88,14 +90,17 @@ Konkrečios kiekvieno rėmėjo sumos viešai neskelbiamos.
 - Rotary klubas „Vytis“
 - Rotary klubas „Dipolis“
 
-## Planuojamas koncertų grafikas
+## Koncertų grafikas
 
-Grafikas ir koncertų vietos dar derinami.
+- **2026-09-06, sekmadienis, 18:00 — Daugai**, Daugų technologijos ir verslo mokykla.
+  Atviras koncertas, įėjimas laisvas.
+- **2026-09-09, trečiadienis, 18:00 — Kaunas**, Nacionalinis Kauno dramos teatras.
+  Bilietai: https://dramosteatras.koobin.com/lt/koncertas-20260909-1800
+- **2026-09-10, ketvirtadienis, 18:00 — Vilnius**, Lietuvos nacionalinio operos ir baleto teatro
+  Kamerinė salė. Būtina išankstinė registracija renginio puslapyje:
+  https://www.facebook.com/events/1074745651954044
 
-- 2026-09-06 — Daugai
-- 2026-09-09 — Kaunas
-- 2026-09-11 — Pakruojis
-- 2026-09-12 — Vilnius
+2026-09-11 planuojamas koncertas Pakruojyje — vieta ir laikas dar derinami.
 
 ## Organizatoriai
 
@@ -123,8 +128,8 @@ Grafikas ir koncertų vietos dar derinami.
 - **Paramos sutartis:** https://peacemusicfreedom2026.org/paramos-sutartis.docx
 
 Su kiekvienu rėmėju pasirašoma paramos sutartis. Po programos siunčiama išlaidų ataskaita.
-Jei projektas neįvyktų iki 2026 m. spalio 1 d., nepanaudota parama grąžinama arba,
-davėjui raštu sutikus, skiriama giminingai labdaringai veiklai.
+Biudžetas surinktas, todėl naujos paramos nebeprašoma — rekvizitai skelbiami tik tam, kad
+rėmėjai galėtų užbaigti jau sutartų sumų pervedimus.
 
 ## Kontaktai
 
@@ -135,5 +140,6 @@ davėjui raštu sutikus, skiriama giminingai labdaringai veiklai.
 
 ## Nuorodos
 
-- [Kampanijos puslapis](https://peacemusicfreedom2026.org/): pilna informacija, laisvų vietų skaičius, rėmėjų sąrašas
+- [Kampanijos puslapis](https://peacemusicfreedom2026.org/): pilna informacija, koncertų grafikas, rėmėjų sąrašas
+- [Koncertų grafikas](https://peacemusicfreedom2026.org/#koncertai): datos, salės, bilietai ir registracija
 - [Paramos sutarties forma](https://peacemusicfreedom2026.org/paramos-sutartis.docx): Word dokumentas, kurį rėmėjas užsipildo pats
